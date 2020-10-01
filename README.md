@@ -34,8 +34,6 @@ Why not ?
 - Highcharts
 - Google Sheets (as database)
 
-# Technical Stuff
-
 ### Project setup
 
 ```

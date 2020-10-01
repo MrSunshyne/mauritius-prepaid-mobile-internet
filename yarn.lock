@@ -4384,6 +4384,11 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
+highcharts@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-8.2.0.tgz#3d4893015caf1a7c9ed85284d983911e844649f3"
+  integrity sha512-s3R7UEaMWUDJNxFfdjuiOtI8rnSvhEZUNN4TA7LiDRc9Tw7DUKvTv5WXSTYzxojokLbybwwlf9t3jg/meAUTnQ==
+
 highlight.js@^9.6.0:
   version "9.18.3"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.3.tgz#a1a0a2028d5e3149e2380f8a865ee8516703d634"
@@ -8402,6 +8407,11 @@ vue-eslint-parser@^7.1.0:
     espree "^6.2.1"
     esquery "^1.0.1"
     lodash "^4.17.15"
+
+vue-highcharts@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vue-highcharts/-/vue-highcharts-0.2.0.tgz#93754ba2ee199f3c506200987e1dc74e9adc93d9"
+  integrity sha512-+zXI/ei3KgpVuEreyeTsvLIp092m+03JtTwg6gj7DxtjJqi4LhYvV/rBnUoaXuvqTsiPNwPBPKeyiATL9iM2Gw==
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"

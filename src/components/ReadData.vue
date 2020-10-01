@@ -1,5 +1,10 @@
 <template>
-  <div v-if="stats">{{ stats }}</div>
+  <div v-if="displayStats">
+    <pre>
+          {{ displayStats }}
+        </pre
+    >
+  </div>
   <div v-else>loading..</div>
 </template>
 
@@ -7,7 +12,7 @@
 export default {
   data() {
     return {
-      stats: "",
+      displayStats: "",
     };
   },
   mounted() {
@@ -15,11 +20,6 @@ export default {
   },
   methods: {
     async pullData() {
-      //https://spreadsheets.google.com/feeds/list/1KjeUZEUa-xwjbER3o9RL18lvrn6G3TDamWB8B8hqlQQ/3/public/values?alt=json
-      //https://docs.google.com/spreadsheets/d/e/2PACX-1vRBpFZQHWWZr24mtUavE7hoGytz98QLa4q5pQPnfPezLXWIfGzYvGFrtWVLDDp6J7bfm5nP1XZwB6xD/pubhtml
-      //https://docs.google.com/spreadsheets/d/1i1_6IOA4wdm5Cl-hXRf46Dkwqz5bMcN3KdFcaGahbV0/edit?usp=sharing
-      //
-
       const URL =
         "https://spreadsheets.google.com/feeds/list/1i1_6IOA4wdm5Cl-hXRf46Dkwqz5bMcN3KdFcaGahbV0/1/public/values?alt=json";
 
@@ -35,10 +35,9 @@ export default {
 
       const stats = this.extractData(entry);
       //   commit(SET_STATS, stats);
-      this.stats = stats;
+      this.displayStats = stats;
       return stats;
     },
-
     async fetchJson(url) {
       try {
         const response = await fetch(url);
@@ -55,7 +54,6 @@ export default {
         throw new Error("Response is not JSON", url);
       }
     },
-
     extractObject(entry) {
       const fieldNameList = Object.keys(entry).filter((fieldName) =>
         fieldName.includes("gsx$")

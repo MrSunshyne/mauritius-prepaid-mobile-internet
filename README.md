@@ -25,7 +25,7 @@ No. I have been a heavy internet user for many years and I love remote work. Com
 
 Why not ?
 
-# Technical Stuff
+## Technical Stuff
 
 ### Tech Stack
 
